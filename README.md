@@ -1,13 +1,13 @@
-Arduino i2cscanner
-==================
+I2C_Scanner for Arduino
+======================+
 
-An updated i2cscanner utility for Arduino based upon the i2cscanner at:
+An improved I2C bus scan utility for Arduino based upon i2c_scanner from:
     http://playground.arduino.cc/Main/I2cScanner
 
 This utility is meant to replicate the basic functionality of the
 Linux i2cdetect tool.
 
-Note: By default we use the "quick-write" mode to scan the i2c device bus.
+Note: By default we use the "quick-write" mode to scan the I2C device bus.
 If using the "read-byte" mode beware that write-only devices may hang the
 bus when read is requested from them.
 

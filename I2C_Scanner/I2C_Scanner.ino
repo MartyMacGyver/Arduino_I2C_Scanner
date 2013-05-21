@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------
-// i2c_scanner for Arduino
+// I2C_Scanner for Arduino
 //
 // This sketch scans valid i2c 7-bit addresses
 // This does not scan for devices using 10-bit addresses
@@ -32,7 +32,8 @@
 //    by Martin Falatic http://www.falatic.com/
 //    Works with Arduino 1.0.x and 1.5.x IDEs
 //    Behaves more like Linux i2cdetect
-//    Valid address range is 0x03 to 0x77 per spec
+//    Valid address range is 0x03 to 0x77 per specs, including:
+//        http://www.nxp.com/documents/user_manual/UM10204.pdf
 //    Notes on reserved addresses outside this range:
 //        0x78-0x7B = 10-bit slave address
 //        0x7C-0x7F = device ID
@@ -85,7 +86,7 @@ void setup()
   Serial.begin(SERIAL_BAUD_RATE);
 
   Serial.println();
-  Serial.print("Arduino I2C Scanner v");
+  Serial.print("Arduino I2C Bus Scanner v");
   Serial.println(VERSION);
 
   if (MODE_READ_BYTE || !MODE_WRITE_QUICK) {
