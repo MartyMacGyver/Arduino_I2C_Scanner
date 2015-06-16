@@ -1,4 +1,4 @@
-Android I2C Bus Scanner
+Arduino I2C Bus Scanner
 =======================
 
 An improved I2C bus scan utility for Arduino based upon i2c_scanner from:
